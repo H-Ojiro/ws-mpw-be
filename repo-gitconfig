@@ -1,0 +1,3 @@
+[filter "nb-clean"]
+    clean = "nb-clean clean --preserve-cell-metadata id -- "
+    smudge = "cat"
