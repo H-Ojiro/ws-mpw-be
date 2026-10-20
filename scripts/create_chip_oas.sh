@@ -1,5 +1,7 @@
 #! /usr/bin/bash
 
+SCRIPT_PATH="$(readlink -f "${BASH_SOURCE[0]}")"
+SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
 : <<COMMENTS
 COMMENTS
 
@@ -33,7 +35,7 @@ for chip_name in "${chip_list[@]}"; do
     start_time=$(date +%s%N)  # Nanoseconds since epoch
     echo "Starting extract ${chip_name} from ${oas_reticle} .."
 
-    ./extract_block_oas.py -i ${oas_reticle} -c ${chip_name} -o ${chip_id}/${chip_name}.oas
+    ${SCRIPT_DIR}/extract_block_oas.py -i ${oas_reticle} -c ${chip_name} -o ${chip_id}/${chip_name}.oas
 
     exit_code=$?
     if (($exit_code != 0)); then
