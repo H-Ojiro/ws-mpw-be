@@ -6,7 +6,7 @@ SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
 COMMENTS
 
 if (($# == 0)); then
-    echo "Usage: $0 <reticle.oas>"
+    echo "Usage: $0 <reticle.oas> [chip_name]"
     exit
 fi
 oas_reticle=$1
