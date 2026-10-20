@@ -46,7 +46,10 @@ for chip_name in "${chip_list[@]}"; do
     fi
 
     end_time=$(date +%s%N)  # Nanoseconds since epoch
+    elapsed_ns=$((end_time - start_time))
+    elapsed_ms=$((elapsed_ns / 1000000))
     elapsed_s=$((elapsed_ms / 1000))
+
     echo "Done. Execution time: ${elapsed_s} sec"
 
     if (( ${#chip_list[@]} > 1 )); then
