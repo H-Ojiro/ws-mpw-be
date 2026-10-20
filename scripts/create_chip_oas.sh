@@ -12,12 +12,10 @@ fi
 oas_reticle=$1
 shift
 
-if [[ -e chip.list ]]; then
+if (($# > 0)); then
+    chip_list=( $* )
+elif [[ -e chip.list ]]; then
     mapfile -t chip_list < chip.list
-else
-    if (($# > 0)); then
-        chip_list=( $* )
-    fi
 fi
 if [[ -z ${chip_list} ]]; then
     echo "$0: Undefined chip list"
