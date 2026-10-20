@@ -5,7 +5,12 @@ SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
 : <<COMMENTS
 COMMENTS
 
-oas_reticle=G801.oas
+if (($# == 0)); then
+    echo "Usage: $0 <reticle.oas>"
+    exit
+fi
+oas_reticle=$1
+shift
 
 if [[ -e chip.list ]]; then
     mapfile -t chip_list < chip.list
@@ -31,7 +36,6 @@ for chip_name in "${chip_list[@]}"; do
     chip_id=${chip_name%%_*}
     mkdir -p ${chip_id}
 
-
     start_time=$(date +%s%N)  # Nanoseconds since epoch
     echo "Starting extract ${chip_name} from ${oas_reticle} .."
 
@@ -46,7 +50,6 @@ for chip_name in "${chip_list[@]}"; do
     end_time=$(date +%s%N)  # Nanoseconds since epoch
     elapsed_s=$((elapsed_ms / 1000))
     echo "Done. Execution time: ${elapsed_s} sec"
-    exit
 
     if (( ${#chip_list[@]} > 1 )); then
         ((n--))
