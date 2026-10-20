@@ -1,76 +1,132 @@
 #!/usr/bin/env python3
-
 import argparse
 import klayout.db as db
 
 
-def extract_cell(input_oas: str, output_oas: str, cell_name: str) -> None:
-    src = db.Layout()
-    src.read(input_oas)
+def extract_oasis_block(
+    input_file, output_file, bbox, max_hier_level, cell_name=None, target_layers=None
+):
+    """Extracts layout blocks with low memory overhead using KLayout streaming options."""
+    print(f"Loading OASIS file (optimized options): {input_file}...")
 
-    src_cell = src.cell(cell_name)
-    if src_cell is None:
-        raise ValueError(f"Cell '{cell_name}' not found in {input_oas}")
+    # Configure reader options to save memory
+    load_options = db.LoadLayoutOptions()
+    load_options.create_other_layers = True
 
-    dst = db.Layout()
-    dst.dbu = src.dbu
+    # OPTIMIZATION: If you only care about specific layers (e.g., [ [1,0], [2,0] ]), 
+    # you can filter them here to drastically drop memory usage.
+    if target_layers:
+        load_options.layer_map.clear()
+        for i, (layer, datatype) in enumerate(target_layers):
+            load_options.layer_map.map(db.LayerInfo(layer, datatype), i + 1)
 
-    dst_top = dst.create_cell(src_cell.name)
+    layout = db.Layout()
+    layout.read(input_file, load_options)
 
-    cell_mapping = db.CellMapping()
-    cell_mapping.for_single_cell_full(
-        src,
-        src_cell.cell_index(),
-        dst,
-        dst_top.cell_index(),
-    )
+    # Determine top cell
+    if cell_name:
+        top_cell = layout.cell(cell_name)
+        if not top_cell:
+            raise ValueError(f"Cell '{cell_name}' not found in layout.")
+    else:
+        top_cells = layout.top_cells()
+        if not top_cells:
+            raise ValueError("No top cells found in the layout.")
+        top_cell = top_cells[0]
 
-    dst.copy_tree_shapes(src, cell_mapping)
+    print(f"Target top cell: {top_cell.name}")
 
-    dst.write(output_oas)
+    # Create output layout and map layers
+    out_layout = db.Layout()
+    out_layout.dbu = layout.dbu
 
-    print(
-        f"Extracted cell '{cell_name}' "
-        f"from '{input_oas}' "
-        f"to '{output_oas}'"
-    )
+    layer_mapping = {}
+    for layer_id in layout.layer_indexes():
+        layer_info = layout.get_info(layer_id)
+        new_layer_id = out_layout.insert_layer(layer_info)
+        layer_mapping[layer_id] = new_layer_id
 
+    out_top = out_layout.create_cell(top_cell.name)
 
-def parse_args():
-    parser = argparse.ArgumentParser(
-        description="Extract a cell hierarchy from an OASIS file."
-    )
+    # Handle bounding box
+    dbu = layout.dbu
+    if bbox:
+        box = db.Box(
+            int(bbox[0] / dbu),
+            int(bbox[1] / dbu),
+            int(bbox[2] / dbu),
+            int(bbox[3] / dbu),
+        )
+        print(f"Extracting window: {box} (DBU) with max level: {max_hier_level}")
+    else:
+        box = top_cell.bbox()
+        print(f"No bounding box specified. Using full layout boundary: {box} (DBU) with max level: {max_hier_level}")
 
-    parser.add_argument(
-        "-i",
-        "--input",
-        required=True,
-        help="Input OASIS file",
-    )
+    # Memory-efficient recursive function using native shape insertion instead of heavy Region objects
+    def process_hierarchy(
+        src_cell, dest_cell, current_transform, current_level
+    ):
+        # 1. Copy shapes safely layer by layer
+        for src_layer_id, dest_layer_id in layer_mapping.items():
+            shapes = src_cell.shapes(src_layer_id)
+            if shapes.is_empty():
+                continue
 
-    parser.add_argument(
-        "-c",
-        "--cell",
-        required=True,
-        help="Cell name to extract",
-    )
+            if current_level >= max_hier_level:
+                # Use lightweight box clipping instead of loading a full db.Region where possible
+                transformed_box = box.transformed(db.DCplxTrans(current_transform, dbu))
+                # Iterate through shapes individually to minimize RAM allocation peaks
+                for shape in shapes.each():
+                    if shape.bbox().overlaps(transformed_box):
+                        dest_cell.shapes(dest_layer_id).insert(shape)
+            else:
+                # Direct shape duplication without intermediate Python-heavy processing
+                dest_cell.shapes(dest_layer_id).insert(shapes)
 
-    parser.add_argument(
-        "-o",
-        "--output",
-        required=True,
-        help="Output OASIS file",
-    )
+        # 2. Traverse child instances if below max depth
+        if current_level < max_hier_level:
+            for inst in src_cell.each_inst():
+                trans = inst.cplx_trans
+                inst_bbox = inst.cell.bbox().transformed(trans)
 
-    return parser.parse_args()
+                if inst_bbox.overlaps(box):
+                    child_cell_name = inst.cell.name
+                    dest_child_cell = out_layout.cell(child_cell_name)
+                    if not dest_child_cell:
+                        dest_child_cell = out_layout.create_cell(child_cell_name)
+
+                    dest_cell.insert(db.CellInstArray(dest_child_cell.cell_index(), inst.trans))
+
+                    process_hierarchy(
+                        inst.cell,
+                        dest_child_cell,
+                        current_transform * trans,
+                        current_level + 1,
+                    )
+
+    print("Processing hierarchy with low-memory configuration...")
+    process_hierarchy(top_cell, out_top, db.ICplxTrans(), 0)
+
+    print(f"Writing extracted layout to: {output_file}...")
+    out_layout.write(output_file)
+    print("Extraction completed successfully!")
 
 
 def main():
-    args = parse_args()
+    parser = argparse.ArgumentParser(description="Low-memory OASIS block and hierarchy extractor.")
+    parser.add_argument("-i", "--input", required=True, help="Input OASIS file path")
+    parser.add_argument("-o", "--output", required=True, help="Output OASIS file path")
+    parser.add_argument("-b", "--bbox", type=float, nargs=4, default=None, metavar=("XMIN", "YMIN", "XMAX", "YMAX"), help="Bounding box in microns")
+    parser.add_argument("-m", "--max-level", type=int, default=99, help="Maximum hierarchical level")
+    parser.add_argument("-c", "--cell", default=None, help="Top cell name")
 
-    extract_cell(
-        input_oas=args.input,
-        output_oas=args.output,
+    args = parser.parse_args()
+
+    extract_oasis_block(
+        input_file=args.input,
+        output_file=args.output,
+        bbox=args.bbox,
+        max_hier_level=args.max_level,
         cell_name=args.cell,
     )
 

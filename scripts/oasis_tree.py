@@ -43,48 +43,35 @@ def write_hierarchy(
     visited=None,
 ):
     """
-    Write hierarchy tree recursively.
-
-    Parameters
-    ----------
-    cell : db.Cell
-        Current cell.
-    layout : db.Layout
-        Layout object.
-    outfile : file object
-        Open output file.
-    max_depth : int
-        Maximum hierarchy depth (-1 = unlimited).
-    current_depth : int
-        Current hierarchy level.
-    prefix : str
-        Indentation prefix.
-    visited : set
-        Tracks visited cells to avoid recursion loops.
+    Write hierarchy tree recursively using memory-efficient state management.
     """
-
     if visited is None:
         visited = set()
 
-    if cell.cell_index() in visited:
+    # Prevent infinite loops in cyclic graphs or double reporting of identical branches
+    cell_idx = cell.cell_index()
+    if cell_idx in visited:
         outfile.write(f"{prefix}[already visited]\n")
         return
 
-    visited.add(cell.cell_index())
+    visited.add(cell_idx)
 
     if max_depth >= 0 and current_depth >= max_depth:
+        visited.remove(cell_idx)  # Clean up state backtracking for sibling traversal
         return
 
-    # Collect unique child cells
+    # Collect unique child cells referenced by instances
     children = []
     seen = set()
 
     for inst in cell.each_inst():
-        child = layout.cell(inst.cell_index)
-
-        if child.cell_index() not in seen:
-            children.append(child)
-            seen.add(child.cell_index())
+        # FIXED: inst.cell_index is an attribute property in KLayout Python API
+        child_idx = inst.cell_index
+        if child_idx not in seen:
+            seen.add(child_idx)
+            child = layout.cell(child_idx)
+            if child:
+                children.append(child)
 
     for i, child in enumerate(children):
         is_last = i == len(children) - 1
@@ -101,8 +88,11 @@ def write_hierarchy(
             max_depth=max_depth,
             current_depth=current_depth + 1,
             prefix=child_prefix,
-            visited=visited.copy(),
+            visited=visited,
         )
+
+    # Backtrack visitation set so sibling nodes down other branches can be properly traversed
+    visited.remove(cell_idx)
 
 
 def main():
@@ -144,6 +134,7 @@ def main():
 
     args = parser.parse_args()
 
+    print(f"Loading layout from {args.input}...")
     layout = db.Layout()
     layout.read(args.input)
 
@@ -164,6 +155,7 @@ def main():
 
         top_cell = top_cells[0]
 
+    print(f"Exporting hierarchy for top cell: {top_cell.name}...")
     with open(args.output, "w", encoding="utf-8") as f:
         f.write(f"{top_cell.name}\n")
 
@@ -175,8 +167,9 @@ def main():
             current_depth=0,
         )
 
-    print(f"Hierarchy written to: {args.output}")
+    print(f"Hierarchy successfully written to: {args.output}")
 
 
 if __name__ == "__main__":
     main()
+
