@@ -14,8 +14,8 @@ shift
 
 if (($# > 0)); then
     chip_list=( $* )
-elif [[ -e chip.list ]]; then
-    mapfile -t chip_list < chip.list
+elif [[ -e chip_list.txt ]]; then
+    mapfile -t chip_list < chip_list.txt
 fi
 if [[ -z ${chip_list} ]]; then
     echo "$0: Undefined chip list"
