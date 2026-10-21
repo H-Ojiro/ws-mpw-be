@@ -33,12 +33,13 @@ for chip_name in "${chip_list[@]}"; do
     fi
     chip_id=${chip_name%%_*}
     mkdir -p ${chip_id}
+    gds_out==${chip_id}/${chip_name}.gds.gz
 
+    echo "#${n}: Starting extract ${chip_name} from ${oas_reticle} .."
     start_time=$(date +%s%N)  # Nanoseconds since epoch
-    echo "Starting extract ${chip_name} from ${oas_reticle} .."
 
-    echo "Running: klayout -b -r ${SCRIPT_DIR}/extract_block_gds.py -rd input_oas=${oas_reticle} -rd output_gds=${chip_id}/${chip_name}.gds.gz -rd top_cell=${chip_name} .."
-    klayout -b -r ${SCRIPT_DIR}/extract_block_gds.py -rd input_oas=${oas_reticle} -rd output_gds=${chip_id}/${chip_name}.gds.gz -rd top_cell=${chip_name}
+    echo "Running: klayout -b -r ${SCRIPT_DIR}/extract_block_gds.py -rd input_oas=${oas_reticle} -rd output_gds=${gds_out} -rd top_cell=${chip_name} .."
+    klayout -b -r ${SCRIPT_DIR}/extract_block_gds.py -rd input_oas=${oas_reticle} -rd output_gds=${gds_out} -rd top_cell=${chip_name}
 
     exit_code=$?
     if (($exit_code != 0)); then
@@ -51,6 +52,7 @@ for chip_name in "${chip_list[@]}"; do
     elapsed_ms=$((elapsed_ns / 1000000))
     elapsed_s=$((elapsed_ms / 1000))
 
+    ls -l 
     echo "Done. Execution time: ${elapsed_s} sec"
 
     if (( ${#chip_list[@]} > 1 )); then
