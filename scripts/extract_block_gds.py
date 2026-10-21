@@ -35,6 +35,6 @@ else:
     layout.write(output_gds)
     if os.path.exists(output_gds):
         print(f"Written {output_gds}")
-    else
+    else:
         raise SystemExit(f'Failed to write "{output_gds}".')
 
