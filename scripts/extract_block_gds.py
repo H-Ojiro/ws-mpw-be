@@ -1,10 +1,9 @@
-# Run with: klayout -b -r oasis2gds.py -rd input_oas=... -rd output_gds=... [-rd top_cell=...] 
+# Run with: klayout -b -r oasis2gds.py -rd input_oas=... -rd output_gds=... [-rd top_cell=...]
 #   via ChatGPT
-#   License GPLv2 
+#   License GPLv2
 #   (C) ChipFoundry developed by D. Mitch Bailey
 
 import os
-import sys
 import pya
 
 if not input_oas or not output_gds:
@@ -29,7 +28,7 @@ if top_cell:
     wrapper_list = layout.cells("*_project_wrapper")
     with open("user_top", "w") as wrapper_file:
         for wrapper_cell in wrapper_list:
-            wrapper_file.write(f"{wrapper_cell.name}\n") 
+            wrapper_file.write(f"{wrapper_cell.name}\n")
 
 else:
     layout.write(output_gds)
@@ -37,4 +36,3 @@ else:
         print(f"Written {output_gds}")
     else:
         raise SystemExit(f'Failed to write "{output_gds}".')
-
