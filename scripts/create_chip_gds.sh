@@ -33,7 +33,7 @@ for chip_name in "${chip_list[@]}"; do
     fi
     chip_id=${chip_name%%_*}
     mkdir -p ${chip_id}
-    gds_out==${chip_id}/${chip_name}.gds.gz
+    gds_out=${chip_id}/${chip_name}.gds.gz
 
     echo "#${n}: Starting extract ${chip_name} from ${oas_reticle} .."
     start_time=$(date +%s%N)  # Nanoseconds since epoch
