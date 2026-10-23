@@ -21,7 +21,29 @@ if top_cell:
     if layout.cell(top_cell) is None:
         raise SystemExit(f'Top cell "{top_cell}" not found.')
     options = pya.SaveLayoutOptions()
-    options.select_cell(layout.cell(top_cell).cell_index())
+    options.clear_cells()
+    options.keep_instances = False
+
+    visited = set()
+
+    def select_cells(cell):
+        # Ignore this cell and everything below it
+        if "_FILL" in cell.name:
+            return
+
+        if cell.cell_index() in visited:
+            return
+        visited.add(cell.cell_index())
+
+        # Add this cell only
+        options.add_this_cell(cell.cell_index())
+
+        # Explicitly descend into its children
+        for inst in cell.each_inst():
+            select_cells(layout.cell(inst.cell_index))
+
+    select_cells(layout.cell(top_cell))
+
     options.write_context_info = True
     layout.write(output_gds, options)
     print(f"Written {output_gds} with top {top_cell}")
