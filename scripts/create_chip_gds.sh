@@ -28,13 +28,15 @@ PS3='Select number> '
 select chip_name in "${chip_list[@]}"; do
     if [[ -n ${chip_name} ]]; then
         if [[ "${chip_name}" == Cancel ]]; then
+            echo "-> Job canceled"
             exit
         else
            chip_index=${REPLY}
            break
         fi
     else
-        die "Error: Invalid selection = ${REPLY}"
+        echo "##### ERROR: Invalid selection = ${REPLY}"
+        exit
     fi
 done
 
