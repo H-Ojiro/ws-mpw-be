@@ -31,8 +31,8 @@ select chip_name in "${chip_list[@]}"; do
             echo "-> Job canceled"
             exit
         else
-           chip_index=${REPLY}
-           break
+            chip_index=${REPLY}
+            break
         fi
     else
         echo "##### ERROR: Invalid selection = ${REPLY}"
