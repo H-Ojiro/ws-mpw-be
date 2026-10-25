@@ -26,7 +26,7 @@ if top_cell:
 
     visited = set()
 
-    def select_cells(cell):
+    def exclude_fill(cell):
         # Ignore this cell and everything below it
         if "_FILL" in cell.name:
             return
@@ -40,9 +40,9 @@ if top_cell:
 
         # Explicitly descend into its children
         for inst in cell.each_inst():
-            select_cells(layout.cell(inst.cell_index))
+            exclude_fill(layout.cell(inst.cell_index))
 
-    select_cells(layout.cell(top_cell))
+    exclude_fill(layout.cell(top_cell))
 
     options.write_context_info = True
     layout.write(output_gds, options)
