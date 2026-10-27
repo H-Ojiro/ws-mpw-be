@@ -30,6 +30,10 @@ if top_cell:
         # Ignore this cell and everything below it
         if "_FILL" in cell.name:
             return
+        if "__fillcap" in cell.name:
+            return
+        if "__fill_" in cell.name:
+            return
 
         if cell.cell_index() in visited:
             return
