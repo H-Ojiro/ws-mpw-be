@@ -17,6 +17,7 @@ layout.read(input_oas)  # format inferred from extension
 
 print(f"Convert {input_oas} to {output_gds} with top {top_cell}")
 
+
 # Helper function to write cell_list.txt file
 def write_cell_list(cell_names, filename="cell_list.txt"):
     """Writes a list of cell names to a text file, sorted alphabetically."""
@@ -24,6 +25,7 @@ def write_cell_list(cell_names, filename="cell_list.txt"):
         for name in sorted(set(cell_names)):
             f.write(f"{name}\n")
     print(f"Written cell list to {filename}")
+
 
 if top_cell:
     if layout.cell(top_cell) is None:
