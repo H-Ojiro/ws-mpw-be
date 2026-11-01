@@ -12,19 +12,23 @@ if not input_oas or not output_gds:
 if not os.path.isfile(input_oas):
     raise FileNotFoundError("Input not found: " + input_oas)
 
+# Determine the directory of the output GDS so cell.list is saved alongside it
+output_dir = os.path.dirname(output_gds)
+cell_list_path = os.path.join(output_dir, "cell.list") if output_dir else "cell.list"
+
 layout = pya.Layout()
 layout.read(input_oas)  # format inferred from extension
 
 print(f"Convert {input_oas} to {output_gds} with top {top_cell}")
 
 
-# Helper function to write cell_list.txt file
-def write_cell_list(cell_names, filename="cell_list.txt"):
+# Helper function to write cell.list file
+def write_cell_list(cell_names, filepath):
     """Writes a list of cell names to a text file, sorted alphabetically."""
-    with open(filename, "w") as f:
+    with open(filepath, "w") as f:
         for name in sorted(set(cell_names)):
             f.write(f"{name}\n")
-    print(f"Written cell list to {filename}")
+    print(f"Written cell list to {filepath}")
 
 
 if top_cell:
@@ -62,11 +66,12 @@ if top_cell:
     layout.write(output_gds, options)
     print(f"Written {output_gds} with top {top_cell}")
 
-    # Write the cell_list.txt containing only the cells included in the export
-    write_cell_list(exported_cell_names, "cell_list.txt")
+    # Write cell.list in the same directory as output_gds
+    write_cell_list(exported_cell_names, cell_list_path)
 
     wrapper_list = layout.cells("*_project_wrapper")
-    with open("user_top", "w") as wrapper_file:
+    user_top_path = os.path.join(output_dir, "user_top") if output_dir else "user_top"
+    with open(user_top_path, "w") as wrapper_file:
         for wrapper_cell in wrapper_list:
             wrapper_file.write(f"{wrapper_cell.name}\n")
 
@@ -75,8 +80,8 @@ else:
     if os.path.exists(output_gds):
         print(f"Written {output_gds}")
 
-        # If no top_cell is specified, write all cells in the layout
+        # Write cell.list in the same directory as output_gds
         all_cell_names = [cell.name for cell in layout.each_cell()]
-        write_cell_list(all_cell_names, "cell_list.txt")
+        write_cell_list(all_cell_names, cell_list_path)
     else:
         raise SystemExit(f'Failed to write "{output_gds}".')
