@@ -1,0 +1,1806 @@
+{
+  "cells": {
+    "OCD2_gf180mcu_ocd_sram_top_2_8": [
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          460000,
+          88005,
+          520000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          460000,
+          3904005,
+          520000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          601000,
+          88005,
+          661000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          601000,
+          3904005,
+          661000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          742000,
+          88005,
+          802000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          742000,
+          3904005,
+          802000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          883000,
+          88005,
+          943000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          883000,
+          3904005,
+          943000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          1024000,
+          88005,
+          1084000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          1024000,
+          3904005,
+          1084000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          1165000,
+          88005,
+          1225000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          1165000,
+          3904005,
+          1225000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          1306000,
+          88005,
+          1366000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          1306000,
+          3904005,
+          1366000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          1447000,
+          88005,
+          1507000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          1447000,
+          3904005,
+          1507000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          1588000,
+          88005,
+          1648000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          1588000,
+          3904005,
+          1648000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          1729000,
+          88005,
+          1789000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          1729000,
+          3904005,
+          1789000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          1870000,
+          88005,
+          1930000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          1870000,
+          3904005,
+          1930000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28005,
+          2011000,
+          88005,
+          2071000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844005,
+          2011000,
+          3904005,
+          2071000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          452505,
+          28000,
+          512505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          581505,
+          28000,
+          641505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          710505,
+          28000,
+          770505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          839505,
+          28000,
+          899505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          968505,
+          28000,
+          1028505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1097505,
+          28000,
+          1157505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1226505,
+          28000,
+          1286505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1355505,
+          28000,
+          1415505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1484505,
+          28000,
+          1544505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1613505,
+          28000,
+          1673505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1742505,
+          28000,
+          1802505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1871505,
+          28000,
+          1931505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2000505,
+          28000,
+          2060505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2129505,
+          28000,
+          2189505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2258505,
+          28000,
+          2318505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2387505,
+          28000,
+          2447505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2516505,
+          28000,
+          2576505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2645505,
+          28000,
+          2705505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2774505,
+          28000,
+          2834505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2903505,
+          28000,
+          2963505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3032505,
+          28000,
+          3092505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3161505,
+          28000,
+          3221505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3290505,
+          28000,
+          3350505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3419505,
+          28000,
+          3479505,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          452505,
+          2443000,
+          512505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          581505,
+          2443000,
+          641505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          710505,
+          2443000,
+          770505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          839505,
+          2443000,
+          899505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          968505,
+          2443000,
+          1028505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1097505,
+          2443000,
+          1157505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1226505,
+          2443000,
+          1286505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1355505,
+          2443000,
+          1415505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1484505,
+          2443000,
+          1544505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1613505,
+          2443000,
+          1673505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1742505,
+          2443000,
+          1802505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1871505,
+          2443000,
+          1931505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2000505,
+          2443000,
+          2060505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2129505,
+          2443000,
+          2189505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2258505,
+          2443000,
+          2318505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2387505,
+          2443000,
+          2447505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2516505,
+          2443000,
+          2576505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2645505,
+          2443000,
+          2705505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2774505,
+          2443000,
+          2834505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2903505,
+          2443000,
+          2963505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3032505,
+          2443000,
+          3092505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3161505,
+          2443000,
+          3221505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3290505,
+          2443000,
+          3350505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3419505,
+          2443000,
+          3479505,
+          2503000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "VDD",
+        "x": 1127505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "VDD",
+        "x": 3874005,
+        "y": 631000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "VDD",
+        "x": 58005,
+        "y": 2041000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "VDD",
+        "x": 2933505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "analog_PAD[1]",
+        "x": 58005,
+        "y": 1618000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[11]",
+        "x": 2417505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "rst_n_PAD",
+        "x": 611505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[35]",
+        "x": 2030505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[3]",
+        "x": 1385505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[7]",
+        "x": 1901505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "analog_PAD[2]",
+        "x": 58005,
+        "y": 1477000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[28]",
+        "x": 3191505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "input_PAD[3]",
+        "x": 58005,
+        "y": 772000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[15]",
+        "x": 3191505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[6]",
+        "x": 1772505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "clk_PAD",
+        "x": 482505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[39]",
+        "x": 1514505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[42]",
+        "x": 869505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[13]",
+        "x": 2675505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[21]",
+        "x": 3874005,
+        "y": 1195000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "DVSS",
+        "x": 2804505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "DVSS",
+        "x": 58005,
+        "y": 490000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "DVSS",
+        "x": 3874005,
+        "y": 1900000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "DVSS",
+        "x": 998505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[14]",
+        "x": 3062505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "input_PAD[2]",
+        "x": 58005,
+        "y": 913000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[17]",
+        "x": 3449505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[41]",
+        "x": 1256505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[43]",
+        "x": 740505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[22]",
+        "x": 3874005,
+        "y": 1336000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[9]",
+        "x": 2159505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[4]",
+        "x": 1514505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[20]",
+        "x": 3874005,
+        "y": 1054000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[33]",
+        "x": 2288505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[31]",
+        "x": 2546505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[44]",
+        "x": 611505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[12]",
+        "x": 2546505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "VSS",
+        "x": 998505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "VSS",
+        "x": 3874005,
+        "y": 490000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "VSS",
+        "x": 58005,
+        "y": 1900000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "VSS",
+        "x": 2804505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[0]",
+        "x": 740505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[5]",
+        "x": 1643505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[26]",
+        "x": 3449505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "input_PAD[0]",
+        "x": 58005,
+        "y": 1195000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[30]",
+        "x": 2675505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[8]",
+        "x": 2030505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[45]",
+        "x": 482505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[29]",
+        "x": 3062505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[2]",
+        "x": 1256505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[1]",
+        "x": 869505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "analog_PAD[0]",
+        "x": 58005,
+        "y": 1759000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[32]",
+        "x": 2417505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[10]",
+        "x": 2288505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[18]",
+        "x": 3874005,
+        "y": 772000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "DVDD",
+        "x": 2933505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "DVDD",
+        "x": 58005,
+        "y": 631000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "DVDD",
+        "x": 3874005,
+        "y": 2041000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "DVDD",
+        "x": 1127505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "analog_PAD[3]",
+        "x": 58005,
+        "y": 1336000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[25]",
+        "x": 3874005,
+        "y": 1759000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "input_PAD[1]",
+        "x": 58005,
+        "y": 1054000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[16]",
+        "x": 3320505,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[38]",
+        "x": 1643505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[23]",
+        "x": 3874005,
+        "y": 1477000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[24]",
+        "x": 3874005,
+        "y": 1618000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[27]",
+        "x": 3320505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[36]",
+        "x": 1901505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[19]",
+        "x": 3874005,
+        "y": 913000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[34]",
+        "x": 2159505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[37]",
+        "x": 1772505,
+        "y": 2473000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "bidir_PAD[40]",
+        "x": 1385505,
+        "y": 2473000
+      }
+    ]
+  }
+}
