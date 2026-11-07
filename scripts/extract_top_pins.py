@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import argparse
 import sys
 from pathlib import Path
 import pya
@@ -8,8 +9,10 @@ TARGET_LAYER = 81
 TARGET_DATATYPE = 10
 
 
-def extract_top_pins_klayout(gds_path, target_layer=81, target_datatype=10):
-    """Extracts top-level text labels/pins from a GDS/GDS.GZ file using KLayout pya."""
+def extract_top_pins_klayout(
+    gds_path, target_layer=81, target_datatype=10, cell_name=None
+):
+    """Extracts text labels/pins from a specified cell (or top cell) in a GDS/GDS.GZ file."""
     gds_file = Path(gds_path)
     if not gds_file.is_file():
         raise FileNotFoundError(f"GDS file not found: {gds_path}")
@@ -20,24 +23,34 @@ def extract_top_pins_klayout(gds_path, target_layer=81, target_datatype=10):
     print(f"Reading layout: {gds_file} ...")
     layout.read(str(gds_file))
 
-    # Identify top cell
-    top_cells = layout.top_cells()
-    if not top_cells:
-        print("Error: No top-level cell found in the layout.")
-        return [], None
+    # Select target cell
+    if cell_name:
+        cell = layout.cell(cell_name)
+        if cell is None:
+            available_cells = [c.name for c in layout.top_cells()]
+            print(
+                f"Error: Specified cell '{cell_name}' not found in layout.\n"
+                f"Top-level cell(s) available: {available_cells}"
+            )
+            return [], None
+    else:
+        top_cells = layout.top_cells()
+        if not top_cells:
+            print("Error: No top-level cell found in the layout.")
+            return [], None
+        cell = top_cells[0]
 
-    top_cell = top_cells[0]
-    top_cell_name = top_cell.name
-    print(f"Top cell identified: '{top_cell_name}'")
+    cell_name = cell.name
+    print(f"Extracting pins from cell: '{cell_name}'")
 
     pins = []
 
     # Map target layer/datatype to KLayout layer index
     layer_index = layout.layer(target_layer, target_datatype)
 
-    # Iterate over text objects in the top cell
-    for shape in top_cell.shapes(layer_index):
-        if shape.is_text():  # Corrected line
+    # Iterate over text objects in the selected cell
+    for shape in cell.shapes(layer_index):
+        if shape.is_text():
             text = shape.text
             # Convert database units (DBU) to microns
             dbu = layout.dbu
@@ -54,36 +67,53 @@ def extract_top_pins_klayout(gds_path, target_layer=81, target_datatype=10):
                 }
             )
 
-    return pins, top_cell_name
+    return pins, cell_name
 
 
 def main():
-    if len(sys.argv) < 2:
-        print(
-            "Usage: python extract_top_pins.py <input.gds.gz> [output_pins.txt]"
-        )
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description="Extract top-level pin labels from a GDS/GDS.GZ file."
+    )
+    parser.add_argument("gds_input", help="Path to input GDS/GDS.GZ file")
+    parser.add_argument(
+        "output_file",
+        nargs="?",
+        default="pin.list",
+        help="Path to output pin list file (default: pin.list)",
+    )
+    parser.add_argument(
+        "-t",
+        "--top-cell",
+        dest="top_cell",
+        default=None,
+        help="Name of the top cell to inspect (optional, auto-detects by default)",
+    )
 
-    gds_input = sys.argv[1]
-    output_file = sys.argv[2] if len(sys.argv) > 2 else "pin.list"
+    args = parser.parse_args()
 
     try:
-        pins, top_cell_name = extract_top_pins_klayout(
-            gds_input, TARGET_LAYER, TARGET_DATATYPE
+        pins, target_cell_name = extract_top_pins_klayout(
+            gds_path=args.gds_input,
+            target_layer=TARGET_LAYER,
+            target_datatype=TARGET_DATATYPE,
+            cell_name=args.top_cell,
         )
     except Exception as e:
         print(f"Error reading layout: {e}")
         sys.exit(1)
 
+    if target_cell_name is None:
+        sys.exit(1)
+
     if not pins:
         print(
-            f"No pin labels found matching Layer {TARGET_LAYER}, Datatype {TARGET_DATATYPE} in top cell."
+            f"No pin labels found matching Layer {TARGET_LAYER}, Datatype {TARGET_DATATYPE} in cell '{target_cell_name}'."
         )
         return
 
-    # Write results
-    with open(output_file, "w") as f:
-        header = f"# Top Pins for Cell: '{top_cell_name}' (Filter: Layer {TARGET_LAYER}, Datatype {TARGET_DATATYPE})\n"
+    # Write results to output file and stdout
+    with open(args.output_file, "w") as f:
+        header = f"# Pins for Cell: '{target_cell_name}' (Filter: Layer {TARGET_LAYER}, Datatype {TARGET_DATATYPE})\n"
         columns = f"{'PIN_NAME':<25} {'LAYER':<8} {'DATATYPE':<10} {'X_POS (um)':<14} {'Y_POS (um)':<14}\n"
         separator = "-" * 75 + "\n"
 
@@ -97,7 +127,7 @@ def main():
             f.write(line + "\n")
 
     print(
-        f"\nSuccessfully saved {len(pins)} pins to output file: '{output_file}'"
+        f"\nSuccessfully saved {len(pins)} pins to output file: '{args.output_file}'"
     )
 
 
