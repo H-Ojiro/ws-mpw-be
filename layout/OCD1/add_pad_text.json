@@ -1,0 +1,1581 @@
+{
+  "cells": {
+    "OCD1_caravel_openframe_top_8_6": [
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          558500,
+          28000,
+          618500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          833500,
+          28000,
+          893500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1108500,
+          28000,
+          1168500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1383500,
+          28000,
+          1443500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1658500,
+          28000,
+          1718500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1933500,
+          28000,
+          1993500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2208500,
+          28000,
+          2268500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2483500,
+          28000,
+          2543500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2758500,
+          28000,
+          2818500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3033500,
+          28000,
+          3093500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3308500,
+          28000,
+          3368500,
+          88000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          553500,
+          5034000,
+          613500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          828500,
+          5034000,
+          888500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1103500,
+          5034000,
+          1163500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1378500,
+          5034000,
+          1438500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1653500,
+          5034000,
+          1713500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          1928500,
+          5034000,
+          1988500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2203500,
+          5034000,
+          2263500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2478500,
+          5034000,
+          2538500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          2753500,
+          5034000,
+          2813500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3028500,
+          5034000,
+          3088500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3303500,
+          5034000,
+          3363500,
+          5094000
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          458500,
+          88000,
+          518500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          663500,
+          88000,
+          723500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          868500,
+          88000,
+          928500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          1073500,
+          88000,
+          1133500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          1278500,
+          88000,
+          1338500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          1483500,
+          88000,
+          1543500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          1688500,
+          88000,
+          1748500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          1893500,
+          88000,
+          1953500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          2098500,
+          88000,
+          2158500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          2303500,
+          88000,
+          2363500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          2508500,
+          88000,
+          2568500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          2713500,
+          88000,
+          2773500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          2918500,
+          88000,
+          2978500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          3123500,
+          88000,
+          3183500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          3328500,
+          88000,
+          3388500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          3533500,
+          88000,
+          3593500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          3738500,
+          88000,
+          3798500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          3943500,
+          88000,
+          4003500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          4148500,
+          88000,
+          4208500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          4353500,
+          88000,
+          4413500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          28000,
+          4558500,
+          88000,
+          4618500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          478500,
+          3904000,
+          538500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          693500,
+          3904000,
+          753500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          908500,
+          3904000,
+          968500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          1123500,
+          3904000,
+          1183500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          1338500,
+          3904000,
+          1398500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          1553500,
+          3904000,
+          1613500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          1768500,
+          3904000,
+          1828500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          1983500,
+          3904000,
+          2043500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          2198500,
+          3904000,
+          2258500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          2413500,
+          3904000,
+          2473500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          2628500,
+          3904000,
+          2688500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          2843500,
+          3904000,
+          2903500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          3058500,
+          3904000,
+          3118500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          3273500,
+          3904000,
+          3333500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          3488500,
+          3904000,
+          3548500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          3703500,
+          3904000,
+          3763500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          3918500,
+          3904000,
+          3978500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          4133500,
+          3904000,
+          4193500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          4348500,
+          3904000,
+          4408500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "box",
+        "layer": [
+          81,
+          10
+        ],
+        "coords": [
+          3844000,
+          4563500,
+          3904000,
+          4623500
+        ]
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[28]",
+        "x": 58000,
+        "y": 3153500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[19]",
+        "x": 1683500,
+        "y": 5064000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[18]",
+        "x": 2233500,
+        "y": 5064000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[17]",
+        "x": 2508500,
+        "y": 5064000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[3]",
+        "x": 3874000,
+        "y": 1153500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[38]",
+        "x": 1138500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[21]",
+        "x": 1133500,
+        "y": 5064000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[1]",
+        "x": 3874000,
+        "y": 723500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[9]",
+        "x": 3874000,
+        "y": 3088500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[26]",
+        "x": 58000,
+        "y": 3563500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[16]",
+        "x": 2783500,
+        "y": 5064000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vccd",
+        "x": 58000,
+        "y": 488500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vccd",
+        "x": 3874000,
+        "y": 4378500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vccd",
+        "x": 58000,
+        "y": 4383500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[14]",
+        "x": 3874000,
+        "y": 4593500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vddio",
+        "x": 3338500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vddio",
+        "x": 58000,
+        "y": 693500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vddio",
+        "x": 58000,
+        "y": 2333500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vddio",
+        "x": 3874000,
+        "y": 2443500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vddio",
+        "x": 3874000,
+        "y": 3948500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vddio",
+        "x": 58000,
+        "y": 4178500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[11]",
+        "x": 3874000,
+        "y": 3518500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[31]",
+        "x": 58000,
+        "y": 2538500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vssio",
+        "x": 588500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vssio",
+        "x": 3063500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vssio",
+        "x": 3874000,
+        "y": 2013500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vssio",
+        "x": 58000,
+        "y": 3973500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vssio",
+        "x": 1958500,
+        "y": 5064000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vssio",
+        "x": 3058500,
+        "y": 5064000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[6]",
+        "x": 3874000,
+        "y": 1798500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[34]",
+        "x": 58000,
+        "y": 1513500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[37]",
+        "x": 58000,
+        "y": 898500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[10]",
+        "x": 3874000,
+        "y": 3303500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[36]",
+        "x": 58000,
+        "y": 1103500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[2]",
+        "x": 3874000,
+        "y": 938500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[15]",
+        "x": 3333500,
+        "y": 5064000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[5]",
+        "x": 3874000,
+        "y": 1583500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[8]",
+        "x": 3874000,
+        "y": 2873500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[35]",
+        "x": 58000,
+        "y": 1308500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[0]",
+        "x": 3874000,
+        "y": 508500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[23]",
+        "x": 583500,
+        "y": 5064000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[7]",
+        "x": 3874000,
+        "y": 2658500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "resetb",
+        "x": 863500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[32]",
+        "x": 58000,
+        "y": 1923500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[29]",
+        "x": 58000,
+        "y": 2948500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[41]",
+        "x": 2238500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[43]",
+        "x": 2788500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[30]",
+        "x": 58000,
+        "y": 2743500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[33]",
+        "x": 58000,
+        "y": 1718500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[39]",
+        "x": 1688500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[25]",
+        "x": 58000,
+        "y": 3768500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[27]",
+        "x": 58000,
+        "y": 3358500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[42]",
+        "x": 2513500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[13]",
+        "x": 3874000,
+        "y": 4163500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[40]",
+        "x": 1963500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vssd",
+        "x": 1413500,
+        "y": 58000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vssd",
+        "x": 58000,
+        "y": 2128500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "vssd",
+        "x": 3874000,
+        "y": 2228500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[12]",
+        "x": 3874000,
+        "y": 3733500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[20]",
+        "x": 1408500,
+        "y": 5064000
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[24]",
+        "x": 58000,
+        "y": 4588500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[4]",
+        "x": 3874000,
+        "y": 1368500
+      },
+      {
+        "action": "add",
+        "type": "label",
+        "layer": [
+          81,
+          10
+        ],
+        "text": "gpio[22]",
+        "x": 858500,
+        "y": 5064000
+      }
+    ]
+  }
+}
